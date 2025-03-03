@@ -1,0 +1,15 @@
+vector<int> ans;
+
+    for (const int num : nums)
+      if (num < pivot)
+        ans.push_back(num);
+
+    for (const int num : nums)
+      if (num == pivot)
+        ans.push_back(num);
+
+    for (const int num : nums)
+      if (num > pivot)
+        ans.push_back(num);
+
+    return ans;
